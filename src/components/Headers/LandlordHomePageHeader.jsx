@@ -11,6 +11,10 @@ const LandlordHomePageHeader = () => {
     navigate('/landlord-details')
   }
 
+  function handleTenantFormRouting(){
+    navigate('/add-tenant')
+  }
+
   function handleTenantListRouting(){
     navigate('/tenant-list')
   }
@@ -24,6 +28,12 @@ const LandlordHomePageHeader = () => {
         <p>View Your details here</p>
         <button onClick={handleDetailRouting}>Your details</button>
       </div>
+
+      <div id='tenantForm' className='landDivs'>
+        <p>Add a new tenant here</p>
+        <button onClick={handleTenantFormRouting}>Add Tenant</button>
+      </div>
+
 
       <div id='tenantListContainer' className='landDivs'>
         <p>View the all the tenants here</p>

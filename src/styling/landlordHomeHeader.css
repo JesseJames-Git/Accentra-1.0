@@ -28,6 +28,7 @@
     width: 400px;
     border-radius: 20px;
     background-color: rgba(171, 171, 171, 0.077);
+    margin-right: 60px;
 }
 #landlordHomePage button{
     display: block;

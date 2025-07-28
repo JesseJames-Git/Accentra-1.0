@@ -34,40 +34,49 @@ const AddTenantForm = ({tenantsURL, tenants, setTenants}) => {
     <div>
       <form onSubmit={handleSubmit}>
         <label>Name:</label>
+        <br />
         <input 
           type="text"
           value={name}
           onChange={(e) => {setName(e.target.value)}}
           required
         />
+        <br />
 
         <label>Unit:</label>
+        <br />
         <input type="text"
           value={unit}
           onChange={(e) => {setUnit(e.target.value)}}
           required
         />
-
+        <br />
         <label>Phone:</label>
+        <br />
         <input type="text"
           value={phone}
           onChange={(e) => {setPhone(e.target.value)}}
           required
         />
+        <br />
 
         <label>Email:</label>
+        <br />
         <input type="text"
           value={email}
           onChange={(e) => {setEmail(e.target.value)}}
           required
         />
+        <br />
 
         <label>User ID:</label>
+        <br />
         <input type="text"
           value={userId}
           onChange={(e) => {setUserId(Number(e.target.value))}}
           required
         />
+        <br />
         
         <button type="submit">Submit</button>
       </form>
