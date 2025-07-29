@@ -7,8 +7,8 @@ const MaintanenceList = () => {
   const [maintanenceFeedback, setmaintanenceFeedback] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const maintainenceURL = "http://localhost:3000/maintenanceRequests"
-  const tenantURL = "http://localhost:3000/tenants"
+  const maintainenceURL = "https://accentra1-0-backend.onrender.com/maintenanceRequests"
+  const tenantURL = "https://accentra1-0-backend.onrender.com/tenants"
 
   useEffect(() => {
     fetch(tenantURL)
